@@ -1,0 +1,20 @@
+#include <iostream>
+//aydarbek
+
+using namespace std;
+
+int break_chocolate(int n, int m){
+    if((n == 1 && m == 1) || (n == 0 && m == 0)){
+        return 0;
+    }else{
+        return n * m - 1;
+    }
+}
+
+int main(){
+    int n , m ;
+    cin >> n >> m;
+    cout << break_chocolate(n, m) << endl;
+
+    return 0;
+}

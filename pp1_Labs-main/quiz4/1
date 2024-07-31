@@ -1,0 +1,24 @@
+#include <iostream>   //aydarbekamatov
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector <int> countBy(int x, int n){
+    vector <int> ans;
+    for(int i = 1; i <= n; i++){
+        ans.push_back(x * i);
+    }
+    return ans;
+}
+
+
+
+int main(){
+    
+    vector <int> check = countBy(2, 5);
+    for(int i = 0; i < 5; i++){
+        cout << check[i] << ' ';
+    }
+    return 0;
+}

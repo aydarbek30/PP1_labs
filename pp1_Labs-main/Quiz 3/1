@@ -1,0 +1,20 @@
+#include <iostream>
+//aydarbek.amatov
+
+using namespace std;
+
+void rec(int n){
+    if(n < 10){
+        cout << n % 10 << " ";
+    }else{
+        cout << n % 10 << " ";
+        rec(n / 10);
+    }
+}
+
+int main(){
+    int x;
+    cin  >> x;
+    rec(x);
+    return 0;
+}
